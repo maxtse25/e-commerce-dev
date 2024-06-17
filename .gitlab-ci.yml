@@ -1,0 +1,38 @@
+stages:
+  - install
+  - test
+  - build
+
+cache:
+  paths:
+    - node_modules/
+
+install_dependencies:
+  stage: install
+  image: node:latest
+  script:
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/
+    expire_in: 1 week
+
+run_tests:
+  stage: test
+  image: node:latest
+  script:
+    - npm test
+  dependencies:
+    - install_dependencies
+
+build_project:
+  stage: build
+  image: node:latest
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 week
+  dependencies:
+    - install_dependencies
