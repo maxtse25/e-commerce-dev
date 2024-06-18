@@ -23,9 +23,10 @@ run_tests:
   stage: test
   image: node:latest
   script:
-    - ls -la node_modules/@testing-library/jest-dom
-    - cat node_modules/@testing-library/jest-dom/package.json
-    - ./node_modules/.bin/jest
+    - pwd  # Print the current working directory
+    - ls -la  # List contents of the current directory
+    - ls -la node_modules/.bin/  # Verify jest is installed
+    - npm test
   dependencies:
     - install_dependencies
 
