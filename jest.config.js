@@ -5,7 +5,7 @@ module.exports = {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest'
   },
   moduleNameMapper: {
-    '^@/components/(.*)$': '../components/$1',
-    '^@/lib/(.*)$': '../lib/$1'
+    '^@/components/(.*)$': './components/$1',
+    '^@/lib/(.*)$': './lib/$1'
   }
 };
