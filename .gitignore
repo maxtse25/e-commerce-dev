@@ -8,22 +8,22 @@
 
 # testing
 /coverage
+/jest-cache/
 
 # next.js
 /.next/
+/.next/cache/
 /out/
 
 # production
-/build
+/build/
 
 # misc
 .DS_Store
 *.pem
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# logs
+*.log*
 
 # local env files
 .env*.local
@@ -34,3 +34,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# general cache files
+*.cache
