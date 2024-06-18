@@ -1,11 +1,12 @@
 module.exports = {
+  testEnvironment: 'jest-environment-jsdom',
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
-  testEnvironment: 'jsdom',
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest'
   },
   moduleNameMapper: {
-    '^@/components/(.*)$': './components/$1',
-    '^@/lib/(.*)$': './lib/$1'
-  }
+    '^@/components/(.*)$': '<rootDir>/components/$1',
+    '^@/lib/(.*)$': '<rootDir>/lib/$1'
+  },
+  // Add other configurations as necessary
 };
