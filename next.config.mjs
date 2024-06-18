@@ -1,4 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// next.config.mjs
+const nextConfig = {
+  swcMinify: true,
+  compiler: {
+    styledComponents: true,
+  }
+};
 
 export default nextConfig;

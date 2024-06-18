@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import MaxWidthWrapper from './MaxWidthWrapper'; // Adjust the path as necessary
+import MaxWidthWrapper from './MaxWidthWrapper'; 
 
 describe('MaxWidthWrapper', () => {
     it('renders children and applies className', () => {
@@ -9,6 +9,7 @@ describe('MaxWidthWrapper', () => {
                 <div>Test Content</div>
             </MaxWidthWrapper>
         );
-        expect(getByText('Test Content')).toBeInTheDocument();
+        // This checks if 'Test Content' is in the document
+        expect(getByText('Test Content')).toBeTruthy();
     });
 });

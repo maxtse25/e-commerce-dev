@@ -1,10 +1,11 @@
 module.exports = {
-  testEnvironment: 'jest-environment-jsdom',
-  setupFilesAfterEnv: ['@testing-library/jest-dom'],
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest'
+    '^.+\\.(t|j)sx?$': ['@swc/jest', {
+      configFile: ".swcrc"
+    }],
   },
   moduleNameMapper: {
-    '^@/lib/utils$': '<rootDir>/src/lib/utils'
-  }
+    '^@/(.*)$': '<rootDir>/src/$1',  // Adjust based on your project's folder structure
+  },
+  testEnvironment: 'jsdom',  // Ensures a DOM-like environment for React components
 };

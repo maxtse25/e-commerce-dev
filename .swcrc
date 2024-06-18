@@ -1,0 +1,22 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "transform": {
+      "react": {
+        "pragma": "React.createElement",
+        "pragmaFrag": "React.Fragment",
+        "development": false,
+        "useBuiltIns": true
+      }
+    },
+    "target": "es2015"
+  },
+  "module": {
+    "type": "commonjs"
+  }
+}
