@@ -23,7 +23,9 @@ run_tests:
   stage: test
   image: node:latest
   script:
-    - npm test
+    - ls -la node_modules/@testing-library/jest-dom
+    - cat node_modules/@testing-library/jest-dom/package.json
+    - ./node_modules/.bin/jest
   dependencies:
     - install_dependencies
 
