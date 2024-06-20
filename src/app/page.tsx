@@ -1,3 +1,4 @@
+import { Icons } from "@/components/Icon";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
 import { CheckIcon, StarIcon } from "@radix-ui/react-icons";
@@ -104,6 +105,20 @@ export default function Home() {
         </div>
       </MaxWidthWrapper>
     </section>
+
+    {/* value proposition section */}
+    <section className="bg-slate-100 py-24">
+      <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
+          <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
+            <h2 className="order-1 mt-2 tracking-tight text-center text-balance 
+            !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
+              What Our <span className="relative px-2">Customers<Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500" /></span>{''} Say
+            </h2>
+            <img src="snake-2.png" className="w-24 order-0 lg:order-2" />
+          </div>
+      </MaxWidthWrapper>
+    </section>
+
     </div>
   );
 }
