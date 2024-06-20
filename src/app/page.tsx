@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { Check, Star } from "lucide-react";
 import Phone from "@/components/Phone";
+import { CheckIcon, StarIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
 export default function Home() {
@@ -32,15 +32,15 @@ export default function Home() {
               flex-col items-center sm:items-start">
                 <div className="space-y-2">
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-green-600" />
+                    <CheckIcon className="h-5 w-5 shrink-0 text-green-600" />
                     High-quality. durable material
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-green-600" />
+                    <CheckIcon className="h-5 w-5 shrink-0 text-green-600" />
                     5 year print guarantee
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-green-600" />
+                    <CheckIcon className="h-5 w-5 shrink-0 text-green-600" />
                     Modern iPhone models suppported
                   </li>
                 </div>
@@ -73,15 +73,15 @@ export default function Home() {
                 <div className="flex flex-col justift-between items-center 
                 sm:items-start">
                   <div className="flex gap-0.5">
-                    <Star className='h-4 w-4 text-green-600 
+                    <StarIcon className='h-4 w-4 text-green-600 
                     fill-green-600' />
-                    <Star className='h-4 w-4 text-green-600 
+                    <StarIcon className='h-4 w-4 text-green-600 
                     fill-green-600' />
-                    <Star className='h-4 w-4 text-green-600 
+                    <StarIcon className='h-4 w-4 text-green-600 
                     fill-green-600' />
-                    <Star className='h-4 w-4 text-green-600 
+                    <StarIcon className='h-4 w-4 text-green-600 
                     fill-green-600' />
-                    <Star className='h-4 w-4 text-green-600 
+                    <StarIcon className='h-4 w-4 text-green-600 
                     fill-green-600' />
                   </div>
                   <p><span className="font-semibold">1.250 </span> 
