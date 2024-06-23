@@ -128,11 +128,11 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  "The case feels durable and I even got a complement on the design. Had the case for two and a half months now and the images is super clear, on the case I had before, <span className="p-0.5 bg-slate-800 text-white">the image is super clear</span>, on the case I had before, the image started fading into yellow-ish color after a couple weeks. Love it. "
+                  The case feels durable and I even got a complement on the design. Had the case for two and a half months now and the images is super clear, on the case I had before, <span className="p-0.5 bg-slate-800 text-white">the image is super clear</span>, on the case I had before, the image started fading into yellow-ish color after a couple weeks. Love it. 
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
-                <Image className="rounded-full object-cover" src="/users/user-1.png" alt="user" width={50} height={50}/>
+                <img className="rounded-full object-cover" src="/users/user-1.png" alt="user"/>
                 <div className="flex flex-col">
                   <p className="font-semibold">Max</p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
@@ -154,11 +154,11 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  "The case feels durable and I even got a complement on the design. Had the case for two and a half months now and the images is super clear, on the case I had before, <span className="p-0.5 bg-slate-800 text-white">the image is super clear</span>, on the case I had before, the image started fading into yellow-ish color after a couple weeks. Love it. "
+                  The case feels durable and I even got a complement on the design. Had the case for two and a half months now and the images is super clear, on the case I had before, <span className="p-0.5 bg-slate-800 text-white">the image is super clear</span>, on the case I had before, the image started fading into yellow-ish color after a couple weeks. Love it. 
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
-                <Image className="rounded-full object-cover" src="/users/user-2.png" alt="user" width={50} height={50} />
+                <img className="rounded-full object-cover" src="/users/user-2.png" alt="user" />
                 <div className="flex flex-col">
                   <p className="font-semibold">Zoe</p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
