@@ -132,7 +132,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
-                <Image className="rounded-full h-12 w-12 object-cover" src="/users/user-1.png" alt="user" />
+                <Image className="rounded-full object-cover" src="/users/user-1.png" alt="user" width={50} height={50}/>
                 <div className="flex flex-col">
                   <p className="font-semibold">Max</p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
@@ -158,7 +158,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
-                <Image className="rounded-full h-12 w-12 object-cover" src="/users/user-2.png" alt="user" />
+                <Image className="rounded-full object-cover" src="/users/user-2.png" alt="user" width={50} height={50} />
                 <div className="flex flex-col">
                   <p className="font-semibold">Zoe</p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
