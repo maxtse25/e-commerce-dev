@@ -6,6 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { CheckIcon, StarIcon } from "@radix-ui/react-icons";
 import { ArrowRightIcon } from "lucide-react";
 import Link from 'next/link'
+import Page from "./configure/upload/page";
 
 export default function Home() {
   return (
@@ -234,7 +235,9 @@ export default function Home() {
           </ul>
       </MaxWidthWrapper>
     </section>
-
+    <section>
+      <Page />
+    </section> 
     </div>
   );
 }
