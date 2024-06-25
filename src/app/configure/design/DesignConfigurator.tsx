@@ -1,5 +1,9 @@
+"use client"
+
+import { cn } from "@/lib/utils";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import NextImage from 'next/image';
+import { Rnd } from 'react-rnd'
 
 interface DesignConfiguratorProps {
     configId: string
@@ -25,7 +29,27 @@ const DesignConfigurator = ({
                     />
                 </AspectRatio>
                 <div className="absolute z-40 inset-0 left-[3px] top-px right-[3px] bottom-px rounded-[32px] shadow-[0_0_0_99999px_rgba(229,231,235,0.6)]" />
+                <div className={cn('absolute inset-0 left-[3px] top-px right-[3px] bottom-px rounded-[32px]', `bg-zinc-950`
+                )} />
             </div>
+
+            <Rnd default={{
+                x: 150,
+                y: 205,
+                height: imageDimensions.height / 4,
+                width: imageDimensions.width /4, 
+            }}
+            lockAspectRatio
+            resizeHandleComponet={{}}>
+
+                <div className="relative w-full h-full">
+                    <NextImage 
+                        src={imageUrl} 
+                        fill alt='your image' 
+                        className="pointer-events-none" 
+                    />
+                </div>
+            </Rnd>
         </div>
     </div>
 }
