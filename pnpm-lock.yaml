@@ -44,6 +44,12 @@ importers:
       '@supabase/supabase-js':
         specifier: ^2.43.5
         version: 2.43.5
+      '@tanstack/react-query':
+        specifier: ^5.48.0
+        version: 5.48.0(react@18.3.1)
+      '@types/react-rnd':
+        specifier: ^8.0.0
+        version: 8.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@uploadthing/react':
         specifier: ^6.6.0
         version: 6.6.0(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(uploadthing@6.12.0(next@14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.4))
@@ -1573,6 +1579,14 @@ packages:
   '@swc/types@0.1.8':
     resolution: {integrity: sha512-RNFA3+7OJFNYY78x0FYwi1Ow+iF1eF5WvmfY1nXPOEH4R2p/D4Cr1vzje7dNAI2aLFqpv8Wyz4oKSWqIZArpQA==}
 
+  '@tanstack/query-core@5.48.0':
+    resolution: {integrity: sha512-lZAfPPeVIqXCswE9SSbG33B6/91XOWt/Iq41bFeWb/mnHwQSIfFRbkS4bfs+WhIk9abRArF9Id2fp0Mgo+hq6Q==}
+
+  '@tanstack/react-query@5.48.0':
+    resolution: {integrity: sha512-GDExbjYWzvDokyRqMSWXdrPiYpp95Aig0oeMIrxTaruOJJgWiWfUP//OAaowm2RrRkGVsavSZdko/XmIrrV2Nw==}
+    peerDependencies:
+      react: ^18.0.0
+
   '@tanstack/react-virtual@3.5.0':
     resolution: {integrity: sha512-rtvo7KwuIvqK9zb0VZ5IL7fiJAEnG+0EiFZz8FUOs+2mhGqdGmjKIaT1XU7Zq0eFqL0jonLlhbayJI/J2SA/Bw==}
     peerDependencies:
@@ -1679,6 +1693,10 @@ packages:
 
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
+
+  '@types/react-rnd@8.0.0':
+    resolution: {integrity: sha512-k/exWCXCY3CDqyJUJeny2SgsfWslWh6XU32/S0YJH6p4E8q2FK89WAPzdG0AECA2k95UC75YKErDRQ/IyvDz6g==}
+    deprecated: This is a stub types definition. react-rnd provides its own type definitions, so you do not need this installed.
 
   '@types/react@18.3.3':
     resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
@@ -5991,6 +6009,13 @@ snapshots:
     dependencies:
       '@swc/counter': 0.1.3
 
+  '@tanstack/query-core@5.48.0': {}
+
+  '@tanstack/react-query@5.48.0(react@18.3.1)':
+    dependencies:
+      '@tanstack/query-core': 5.48.0
+      react: 18.3.1
+
   '@tanstack/react-virtual@3.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@tanstack/virtual-core': 3.5.0
@@ -6101,6 +6126,13 @@ snapshots:
   '@types/react-dom@18.3.0':
     dependencies:
       '@types/react': 18.3.3
+
+  '@types/react-rnd@8.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      react-rnd: 10.4.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    transitivePeerDependencies:
+      - react
+      - react-dom
 
   '@types/react@18.3.3':
     dependencies:
@@ -6899,7 +6931,7 @@ snapshots:
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.57.0)
       eslint-plugin-react: 7.34.2(eslint@8.57.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
@@ -6923,7 +6955,7 @@ snapshots:
       enhanced-resolve: 5.17.0
       eslint: 8.57.0
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.5
       is-core-module: 2.13.1
@@ -6945,7 +6977,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
